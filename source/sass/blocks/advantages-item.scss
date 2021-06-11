@@ -34,13 +34,15 @@
   padding-top: 23px;
 }
 
-.advantages-item__text dt {
+.advantages-item__text h3 {
+  margin-top: 0;
   margin-bottom: 21px;
 
   @include font--segoe(22px, 29px, 600, $haiti);
 }
 
-.advantages-item__text dd {
+.advantages-item__text p {
+  margin-top: 0;
   margin-bottom: 20px;
   margin-left: 0;
 

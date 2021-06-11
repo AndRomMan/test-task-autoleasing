@@ -278,7 +278,9 @@ ul {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0;
+  list-style: none; }
 
 .advantages-item__img img {
   -o-object-fit: cover;
@@ -316,7 +318,8 @@ ul {
   width: 56%;
   padding-top: 23px; }
 
-.advantages-item__text dt {
+.advantages-item__text h3 {
+  margin-top: 0;
   margin-bottom: 21px;
   font-weight: 600;
   font-size: 22px;
@@ -324,7 +327,8 @@ ul {
   font-family: "Segoe UI", "Arial", sans-serif;
   color: #2e2d35; }
 
-.advantages-item__text dd {
+.advantages-item__text p {
+  margin-top: 0;
   margin-bottom: 20px;
   margin-left: 0;
   font-weight: 400;
