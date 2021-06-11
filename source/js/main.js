@@ -5,6 +5,7 @@ let body = document.body;
 let authorButton = document.querySelector('.main-nav__button');
 let closeButton = document.querySelector('.modal__close');
 let modal = document.querySelector('.modal');
+let html = document.querySelector('html');
 
 const SCROLL_PREVENTION = 'js-body-scroll-prevention';
 const MODAL_OPENED = 'js-modal-opened';
@@ -22,6 +23,7 @@ function authorButtonClickHandler() {
 function openModal() {
   if (body) {
     body.classList.add(SCROLL_PREVENTION);
+    html.classList.add(SCROLL_PREVENTION);
   }
   if (modal) {
     modal.classList.add(MODAL_OPENED);
@@ -37,6 +39,7 @@ function openModal() {
 function closeModal() {
   if (body.classList.contains(SCROLL_PREVENTION)) {
     body.classList.remove(SCROLL_PREVENTION);
+    html.classList.remove(SCROLL_PREVENTION);
   }
   if (modal.classList.contains(MODAL_OPENED)) {
     modal.classList.remove(MODAL_OPENED);
