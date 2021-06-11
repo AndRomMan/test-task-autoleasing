@@ -1,0 +1,36 @@
+.advantages {
+  //
+}
+
+.advantages__wrapper {
+  padding-top: 131px;
+  padding-bottom: 50px;
+
+  @include viewport--lg {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  @include viewport--md {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding-right: $padding--blocks;
+  padding-left: $padding--blocks;
+
+  @include font--whitney(40px, 52px, 600, $haiti);
+  @include viewport--lg {
+    font-size: 36px;
+  }
+  @include viewport--md {
+    font-size: 30px;
+  }
+}
+
+.advantages__list {
+  //
+}

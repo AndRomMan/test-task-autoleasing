@@ -1,0 +1,72 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-right: $padding--blocks;
+  padding-bottom: 30px;
+  padding-left: $padding--blocks;
+}
+
+.main-nav__link {
+  margin-right: 77px;
+  padding-top: 11px;
+  padding-right: 10px;
+  padding-bottom: 11px;
+  padding-left: 10px;
+
+  @include viewport--lg {
+    margin-right: 60px;
+  }
+  @include viewport--md {
+    margin-right: 50px;
+  }
+  @include viewport--sm {
+    margin-right: 30px;
+    margin-left: 40px;
+  }
+  @include font--whitney(18px, 23px, 400, $white);
+  @include button-border;
+}
+
+.main-nav__link:hover {
+  @include button-hover;
+}
+
+.main-nav__link:focus {
+  @include button-focus;
+}
+
+.main-nav__link:active {
+  opacity: $opacity--active;
+}
+
+.main-nav__button {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  @include button-border;
+  @include font--whitney(18px, 23px, 400, $white);
+}
+
+.main-nav__button:hover {
+  @include button-hover;
+}
+
+.main-nav__button:focus {
+  @include button-focus;
+}
+
+.main-nav__button:active {
+  opacity: $opacity--active;
+}
+
+.main-nav__button svg {
+  margin-right: 14px;
+}

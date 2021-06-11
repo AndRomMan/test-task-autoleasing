@@ -1,0 +1,14 @@
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages-list__item {
+  //
+}
+
+
+.advantages-item__img img {
+  object-fit: cover;
+}

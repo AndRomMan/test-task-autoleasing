@@ -1,0 +1,32 @@
+.registration-button {
+  padding-top: 15px;
+  padding-right: 60px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+
+  background-color: $outrageous-orange;
+  cursor: pointer;
+
+  @include font--whitney(18px, 18px, 600, $white);
+  @include button-border;
+  @include viewport--lg {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+
+    font-size: 16px;
+  }
+}
+
+.registration-button:hover {
+  @include button-hover;
+}
+
+.registration-button:focus {
+  @include button-focus;
+}
+
+.registration-button:active {
+  opacity: $opacity--active;
+}
