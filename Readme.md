@@ -9,7 +9,7 @@
 * * *
 Ссылка на Github Pages **[Авто Лизинг](https://andromman.github.io/mediaworks-test/)**
 
-Ссылка на хостинг **[Авто Лизинг](https://demindesign/autoleasing/)**
+Ссылка на хостинг **[Авто Лизинг](https://demindesign.ru/autoleasing/)**
 
 * * *
 ## Задача
