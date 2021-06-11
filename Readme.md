@@ -1,9 +1,10 @@
 # **Проект: тестовое задание для компании [Media Works](https://mworks.ru/)**
 
 * * *
-Разработчик: 
-**[Роман Демин - профиль на htmlacademy.ru](https://htmlacademy.ru/profile/id219593)**
-**[Роман Демин - CV на career.habr.com](https://career.habr.com/andromman)**
+Разработчик: **Роман Демин**
+
+- **[Профиль на htmlacademy.ru](https://htmlacademy.ru/profile/id219593)**
+- **[CV на career.habr.com](https://career.habr.com/andromman)**
 
 * * *
 Ссылка на Github Pages **[Авто Лизинг](https://demindesign.ru/autoleasing/)**
