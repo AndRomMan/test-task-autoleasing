@@ -1,10 +1,17 @@
 .main-nav {
   display: flex;
   align-items: center;
-  padding-top: 26px;
-  padding-right: $padding--blocks;
+  padding-top: 28px;
+  padding-right: $padding--xl;
   padding-bottom: 30px;
-  padding-left: $padding--blocks;
+  padding-left: $padding--xl;
+
+  @include viewport--sm {
+    padding-top: 15px;
+    padding-right: $padding--sm;
+    padding-bottom: 15px;
+    padding-left: $padding--sm;
+  }
 }
 
 .main-nav__link {
@@ -15,14 +22,19 @@
   padding-left: 10px;
 
   @include viewport--lg {
-    margin-right: 60px;
-  }
-  @include viewport--md {
     margin-right: 50px;
   }
-  @include viewport--sm {
+  @include viewport--md {
     margin-right: 30px;
-    margin-left: 40px;
+  }
+  @include viewport--sm {
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    font-size: 16px;
   }
   @include font--whitney(18px, 23px, 400, $white);
   @include button-border;
@@ -53,6 +65,14 @@
 
   @include button-border;
   @include font--whitney(18px, 23px, 400, $white);
+  @include viewport--sm {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+
+    font-size: 16px;
+  }
 }
 
 .main-nav__button:hover {
@@ -68,5 +88,13 @@
 }
 
 .main-nav__button svg {
+  width: 24px;
+  height: 24px;
   margin-right: 14px;
+
+  @include viewport--sm {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
 }

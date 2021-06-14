@@ -5,8 +5,9 @@ $viewport--md: 768px;
 $viewport--lg: 992px;
 $viewport--lg-1: 1024px;
 $viewport--xl: 1200px;
-$padding--blocks: 15px;
-
+$padding--xl: 15px;
+$padding--sm: 10px;
+$container-max-width: 1200px;
 //--------------------------------- Retina
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -33,9 +34,9 @@ $border-radius--call: 10px;
 $persia-indigo: #2d1686;
 $purple-heart: #4e33b5;
 $magnolia: #f6f5f9;
-
 // -------------------------- Modal
-$modal-back: rgba(28, 24, 47, 0.3);
+$haiti-dark: #1c182f;
+$modal-back: rgba($haiti-dark, 0.3);
 
 // -------------------------- Buttons
 $outrageous-orange: #f25b24;
@@ -46,3 +47,12 @@ $opacity--active: 0.7;
 // .button:hover,
 // .button:focus,
 // .button:active
+
+// -------------------------- Modal
+$card-shadow: (0 4px 4px rgba(0, 0, 0, 0.25));
+
+// -------------------------- Background image
+// соотношение сторон для фонового изображения в блоке "call-to-action"
+:root {
+  --aspect-ratio--call: 2.153;
+}

@@ -2,6 +2,10 @@
   background: linear-gradient(90deg, $persia-indigo 0%, $purple-heart 100%);
 }
 
+@mixin shadow--modal-card {
+  box-shadow: $card-shadow;
+}
+
 @mixin font--segoe($size, $line_height, $weight, $color) {
   font-weight: $weight;
   font-size: $size;

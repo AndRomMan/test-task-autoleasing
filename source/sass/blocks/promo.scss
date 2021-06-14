@@ -4,33 +4,38 @@
 
 .promo__wrapper {
   display: flex;
-  padding-right: $padding--blocks;
+  padding-right: $padding--xl;
   padding-bottom: 85px;
-  padding-left: $padding--blocks;
+  padding-left: $padding--xl;
 
   background-image: url("../img/promo-back.svg");
   background-repeat: no-repeat;
-  background-position: 506px 52px;
+  background-position: 506px 50px;
   // 689x442
   background-size: 689px 442px;
 
   @include viewport--lg {
     padding-bottom: 75px;
 
-    background-position: 420px 34%;
+    background-position: calc(330px + 40%) 34%;
   }
   @include viewport--md {
     padding-bottom: 65px;
 
-    background-position: 285px 25%;
-    // background-position: 80% 25%;
+    background-position: calc(250px + 40%) 25%;
     background-size: 600px auto;
+  }
+  @include viewport--sm {
+    padding-bottom: 45px;
+
+    background-position: calc(150px + 40%) 25%;
+    background-size: 350px auto;
   }
 }
 
 .promo__text-column {
   max-width: 515px;
-  padding-top: 95px;
+  padding-top: 93px;
   padding-bottom: 95px;
 
   @include viewport--lg {
@@ -38,8 +43,14 @@
     padding-top: 70px;
   }
   @include viewport--md {
-    max-width: 420px;
+    max-width: 380px;
     padding-top: 50px;
+  }
+  @include viewport--sm {
+    max-width: 280px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    //
   }
 }
 
@@ -55,8 +66,14 @@
   }
   @include viewport--md {
     // margin-bottom: 25px;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  @include viewport--sm {
+    margin-bottom: 20px;
+
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -72,5 +89,11 @@
   @include viewport--md {
     font-size: 20px;
     line-height: 24px;
+  }
+  @include viewport--sm {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 21px;
   }
 }

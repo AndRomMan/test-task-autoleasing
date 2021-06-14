@@ -6,4 +6,9 @@
 .logo img {
   width: 147px;
   height: 32px;
+
+  @include viewport--sm {
+    width: 90px;
+    height: auto;
+  }
 }

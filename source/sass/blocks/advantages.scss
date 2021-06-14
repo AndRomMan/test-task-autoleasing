@@ -14,19 +14,37 @@
     padding-top: 60px;
     padding-bottom: 30px;
   }
+  @include viewport--sm {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
 }
 
 .advantages__title {
   margin-top: 0;
   margin-bottom: 35px;
-  padding-right: $padding--blocks;
-  padding-left: $padding--blocks;
+  padding-right: $padding--xl;
+  padding-left: $padding--xl;
 
   @include font--whitney(40px, 52px, 600, $haiti);
   @include viewport--lg {
+    margin-bottom: 30px;
+
     font-size: 36px;
+    line-height: 47px;
   }
   @include viewport--md {
+    margin-bottom: 25px;
+
     font-size: 30px;
+    line-height: 39px;
+  }
+  @include viewport--sm {
+    margin-bottom: 15px;
+    padding-top: 24px;
+    padding-right: $padding--sm;
+    padding-left: $padding--sm;
+
+    line-height: 31px;
   }
 }

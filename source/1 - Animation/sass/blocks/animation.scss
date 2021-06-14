@@ -1,0 +1,106 @@
+.animation-wrapper {
+  position: relative;
+
+  height: 80vh;
+
+  background-color: lightgoldenrodyellow;
+}
+
+.button-block {
+  display: flex;
+  justify-content: center;
+}
+
+.button-block button {
+  margin: 20px;
+  padding: 10px 30px;
+
+  @include font--whitney(20px, 20px, 600, $grape);
+}
+
+.circle {
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  background-color: $haiti;
+  // длительность возвращения анимации (перехода) обратно
+  border: 2px solid rgb(0, 23, 97);
+  border-radius: 50%;
+  // transition-duration: 1s;
+
+  transition-duration: 0.3s;
+  // transition-duration: 3s, 6s;
+  // transition-property: background-color, border;
+  // transition-property: border;
+}
+
+.circle:hover {
+  background-color: rebeccapurple;
+  border: 10px solid coral;
+  // transition-duration: 3s, 6s;
+
+  transition-duration: 0.3s;
+
+  // задаем длительность перехода при наведении на элемент
+}
+
+
+.transition-forward {
+  left: 900px;
+
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
+}
+
+.transition-back {
+  left: 0;
+
+  transition-timing-function: ease-in;
+  transition-duration: 1s;
+}
+
+@keyframes forward-move {
+  0% {
+    left: 0;
+    // transform: translate(0, 0);
+  }
+
+  100% {
+    // transform: translate(900px, 0);
+    left: 80%;
+  }
+}
+
+.forward-move {
+  background-color: $haiti;
+
+  animation: forward-move;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+
+  animation-fill-mode: both;
+}
+
+@keyframes reverse-move {
+  0% {
+    left: 80%;
+    // transform: translate(0, 0);
+  }
+
+  100% {
+    left: 0;
+    // transform: translate(-800px, 0);
+  }
+}
+
+.reverse-move {
+  background-color: $grey-suit;
+
+  animation: reverse-move;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  animation-fill-mode: forwards;
+}
